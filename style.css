@@ -1,0 +1,101 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem; 
+    color: #666;
+}
+
+.pimg1 {
+  background-image: url(images/image1.png);
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url(images/image2.png);
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url(images/image3.png);
+  min-height: 400px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 1.7rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.textBg {
+  background: #313534;
+  color: #fff;
+  padding: 1.25rem;
+}
+
+.section {
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+/* ===== Mobile & Tablet Responsive ===== */
+@media (max-width: 768px) {
+
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll; /* mobile fix */
+    min-height: 18.75rem;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    padding: 0 10px;
+  }
+
+  .textBg {
+    padding: 0.75rem 1rem;
+  }
+
+  .section {
+    padding: 2rem 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+}
